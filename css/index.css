@@ -1,0 +1,312 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+    width: 100%;
+    position: fixed;
+    scroll-behavior: smooth;
+  }
+
+  .logo img {
+    height: 3vh;
+  }
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu .menu-bar {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .menu .menu-bar a {
+    position: relative;
+    text-decoration: none;
+    color: #222121;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    overflow: hidden;
+    
+  }
+  
+  .menu .menu-bar a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Alterado para a parte inferior */
+    left: 0;
+    right: 100%;
+    height: 2px;
+    background-color: #D5C528;
+    transition: right 0.5s ease;
+  }
+  
+  .menu .menu-bar a:hover::before {
+    right: 0;
+  }
+
+  .botao {
+    cursor: pointer;
+    width: 10vw;
+    height: 3vh;
+    background-color: #D5C528;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+  .botao:hover{
+    background-color: #000000;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+
+  .menu-com-sombra {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+ 
+
+  .tema-principal{
+    width: 90vw;
+    margin-top: 5vh;
+  }
+  
+
+  .titulo-contentor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+margin-top: 5vh;
+  }
+  
+  .titulo-1{
+    text-align: center;
+    font-size: 1rem; 
+  }
+  
+  .bloco-1{
+    width: 100%;
+    margin-top: 5vh;
+   
+  }
+
+  .bloco-1 img{
+width: 350px;
+margin-top: 15vh;
+margin-right: 1110%;
+
+  }
+
+  .bloco-1 p{
+    float: right;
+    margin-top: -20vh;
+    font-size: 0.9rem;
+  }
+
+
+   .card-container {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    flex-basis: calc(30.33% - 20px);
+   
+    padding: 20px;
+    height: 50vh;
+    
+   
+  }
+  
+  .card-icon {
+  
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .card img{
+    margin-top: 10vh;
+width: 50px;
+  }
+  
+  .card-content h3 {
+    color: #3a3a3a;
+    margin-top: 8vh;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .card-content p {
+    margin-top: 2vh;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  
+  form {
+    margin-top: 10vh;
+    border:solid 1px #000000;
+    box-shadow: 0px 6px 8px  #000000;
+    width: 50vw;
+    padding: 50px 50px;
+    border-radius: 8px;
+  }
+
+  label {
+    margin-top: 1vh;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+
+  input[type="email"],
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #078BD7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5vh;
+    width: 100%;
+  }
+
+  #assunto {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .title{
+    font-size: 1rem;   
+  }
+  
+
+  .footer{
+    margin-top: 10vh;
+    position: relative;
+    width: 100%;
+    height: 60vh; 
+    overflow: hidden;
+  }
+    
+    
+    .footer .texto{
+  
+      position: absolute;
+    margin-top: 36vh;
+    color: #000000;
+    text-align: left;
+    margin-left: 2%;
+    font-size: 0.8rem;
+    }
+  
+    .footer .logotipo{
+      margin-left: 2%;
+      width: 70px;
+      position: absolute;
+      margin-top: 24vh;
+    }
+  
+    .footer ul{
+      position: absolute;
+      display: block;
+      left: 50%;
+      margin-top: 30vh;
+    }
+  
+    .footer li{
+      font-size: 0.8rem;
+      margin-top: 1vh;
+     
+    }
+  
+    .footer li ,a{
+      color: #000000;
+    }
+  
+    .titulo-menu{
+      margin-top: 0.vh;
+      color: #000000;
+      font-size: 0.9rem;
+    }
+  
+    .contactos{
+  left:65%;
+  display: block;
+  margin-top:30vh;
+  position: absolute;
+  
+    }
+  
+    .contactos h3{
+      font-size: 0.9rem;
+      color: #000000;
+    }
+  
+a{
+  text-decoration: none;
+}
+
+    .contactos h6{
+      font-weight: normal;
+      margin-top: 1vh;
+      color: #000000;
+  
+    }
+
+    .menu-footer{
+      margin-top: -10vh;
+      position: absolute;
+   list-style: none;
+   right: 33%;
+   margin-left: -53px;
+    }
+    .link-uteis{
+      float: right;
+      margin-top: 30vh;
+    }
+ .link-uteis h6{
+  margin-top: 1vh;
+  font-weight: normal;
+ }
+
+ .link-uteis h3{
+  font-size: 0.9rem;
+ }
+
+ .linha{
+
+  margin-top: -8vh;
+ }
+ .inf{
+  position: absolute;
+ 
+  width: 100%;
+ margin-left:30%;
+ margin-top:1.5vh;
+ 
+ }
+
+ .inf span{
+ font-size: 0.7rem;
+  color: #078BD7;
+
+  margin: 2px 6px;
+ }

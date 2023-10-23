@@ -1,0 +1,31 @@
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 30vh;
+    border-radius: 5px;
+  }
+
+  .container h2 {
+    text-align: center;
+  }
+
+  .container label,
+  .container input[type="text"],
+  .container input[type="password"],
+  .container button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 5vh;
+  }
+
+  .container button {
+    width: 100%;
+    
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }

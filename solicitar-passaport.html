@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="Pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/solicitar-passaport.css">
+    <title>Solicitar Passaport</title>
+</head>
+<body>
+   
+    
+  <header>
+        <div class="logo">
+        <a href="#"><img src="Img/Logotipo/Grupo 11.png" alt="Logo"></a>  
+        </div>
+        <nav>
+          <ul class="menu">
+            <li class="menu-bar"><a href="index.html">Inicio</a></li>
+            <li class="menu-bar"><a href="#">Solicitar Passaport</a></li>
+          </ul>
+        </nav>
+        <button class="botao">Login</button>
+      </header>
+
+<div class="centro">
+
+      <img src="Img/Imagens editadas/Grupo 12.png" alt="tema" class="tema-principal">
+
+
+      <div class="titulo-contentor">
+        <h1 class="titulo-1">Solicitar passaporte</h1>
+      </div>
+      
+
+    
+       <form action="php/solicitar.php" method="post">
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" name="nome" required>
+          
+          <label for="data-nascimento">Data de Nascimento:</label>
+          <input type="date" id="data-nascimento" name="data-nascimento" required>
+          
+          <label for="nacionalidade">Nacionalidade:</label>
+          <input type="text" id="nacionalidade" name="nacionalidade" required>
+          
+          <label for="rg">Número de Identidade (RG):</label>
+          <input type="text" id="rg" name="rg" required>
+          
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" required>
+          
+          <label for="sexo">Sexo:</label>
+          <select id="sexo" name="sexo" required>
+            <option value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+          </select>
+          
+          <label for="endereco">Endereço:</label>
+          <input type="text" id="endereco" name="endereco" required>
+          
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="pais-destino">País de Destino:</label>
+          <input type="text" id="pais-destino" name="pais-destino" required>
+          
+          <label for="datas-viagem">Datas de Viagem Planejadas:</label>
+          <input type="text" id="datas-viagem" name="datas-viagem" required>
+          
+          <label for="motivo-viagem">Motivo da Viagem:</label>
+          <textarea id="motivo-viagem" name="motivo-viagem" required></textarea>
+          
+          <!-- Outros campos do formulário aqui -->
+          
+          <input class="enviar" type="submit" value="Enviar">
+        </form> 
+      </body>
+      <script src="js/index.js"></script>
+      </html>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <footer class="footer">
+         
+        <img src="Img/Logotipo/Grupo 11.png" alt="Logotipo" class="logotipo">
+        <p class="texto">
+          Nossa equipe está empenhada <br>
+      em oferecer um processo simplificado <br>
+      de preenchimento da ficha de ocorrência, <br>
+      garantindo a confidencialidade e segurança dos seus dados<br>
+        </p>
+        
+      
+        <ul class="menu-footer">
+          <h3 class="titulo-menu">Menu</h3>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contactos</a></li>
+        </ul>
+
+
+        <div class="link-uteis">
+           <h3>Link úteis</h3>
+            <h6>Suporte</h6>
+            <h6>Política de privacidade</h6>
+            <h6>Serviços</h6>
+             <h6>Termos e condições</h6>
+
+        </div>
+      
+        <div class="contactos">
+       <h3>Contactos</h3>
+           <h6>policia@gmail.com</h6>
+           <h6>111</h6>
+           
+      </div>
+      
+      
+      
+      </footer>
+
+<hr class="linha">
+<di class="inf"> <span>CopyRigth</span>cristec@gmail.com</di>
+</div>   
+</body>
+<script src="js/index.js"></script>
+</html>

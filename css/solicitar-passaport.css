@@ -1,0 +1,84 @@
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+select {
+  height: 34px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos adicionais */
+form {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px #0000001a;
+  font-weight: normal;
+  margin-top: 5vh;
+}
+
+label {
+  color: #333;
+  font-weight: normal;
+}
+
+input[type="submit"] {
+  background-color:#078BD7;
+  color: #fff;
+  width: 100%;
+  font-weight: normal;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+#motivo-viagem textarea{
+    width: 100%;
+    font-weight: normal;
+    position: absolute;
+}
+
+.enviar input{
+    width: 100%;
+    font-weight: normal;
+}
+
+textarea {
+  height: 100px
+  width: 100%;
+}
+
