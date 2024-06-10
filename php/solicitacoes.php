@@ -50,7 +50,7 @@ $sql = "SELECT * FROM solicitacao_passaporte";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-  echo "<input type='text' id='search-input' onkeyup='searchTable()' placeholder='Digite o termo de pesquisa...'>";
+  
 
   echo "<table>";
   echo "<tr><th>Nome</th><th>Data de Nascimento</th><th>Nacionalidade</th><th>RG</th><th>CPF</th><th>Sexo</th><th>Endereço</th><th>Telefone</th><th>Email</th><th>País de Destino</th><th>Datas de Viagem</th><th>Motivo da Viagem</th><th>Ações</th></tr>";
