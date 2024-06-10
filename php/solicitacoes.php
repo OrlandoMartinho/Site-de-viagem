@@ -20,7 +20,7 @@
           <ul class="menu">
            
             <li class="menu-bar"><a href="administrador.php">contactos recebidos</a></li>
-            <li class="menu-bar"><a href="solicitar.php">Solicitações de passaport</a></li>
+            <li class="menu-bar"><a href="#">Solicitações de passaport</a></li>
             <li class="menu-bar"><a href="../administrador.html">Sair</a></li>
           </ul>
         </nav>
