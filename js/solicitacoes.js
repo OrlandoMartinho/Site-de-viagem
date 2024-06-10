@@ -26,18 +26,23 @@
     const input = document.getElementById("search-input").value.toLowerCase();
     const table = document.getElementsByTagName("table")[0];
     const rows = table.getElementsByTagName("tr");
-  
+   // console.log(emailCell)
     for (let i = 1; i < rows.length; i++) {
-      const nameCell = rows[i].getElementsByTagName("td")[0];
-      if (nameCell) {
-        const name = nameCell.innerText.toLowerCase();
-        if (name.includes(input)) {
-          rows[i].style.display = "";
-        } else {
-          rows[i].style.display = "none";
+        const nameCell = rows[i].getElementsByTagName("td")[0];
+        const emailCell = rows[i].getElementsByTagName("td")[8];
+        alert(input==i)
+        if (nameCell && emailCell ) {
+            const name = nameCell.innerText.toLowerCase();
+            const email = emailCell.innerText.toLowerCase();
+            
+            if (name.includes(input) || email.includes(input) || input==i) {
+                rows[i].style.display = "";
+            } else {
+                rows[i].style.display = "none";
+            }
         }
-      }
     }
-  }
+}
+
   
   

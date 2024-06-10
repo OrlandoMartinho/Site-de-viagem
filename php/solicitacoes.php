@@ -50,32 +50,31 @@ $sql = "SELECT * FROM solicitacao_passaporte";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    // Exibir os resultados em uma tabela HTML
-    echo "<table>";
-    echo "<tr><th>Nome</th><th>Data de Nascimento</th><th>Nacionalidade</th><th>RG</th><th>CPF</th><th>Sexo</th><th>Endereço</th><th>Telefone</th><th>Email</th><th>País de Destino</th><th>Datas de Viagem</th><th>Motivo da Viagem</th><th>Ações</th></tr>";
-    while ($row = $result->fetch_assoc()) {
-        echo "<tr>";
-        echo "<td>" . $row["nome_completo"] . "</td>";
-        echo "<td>" . $row["data_nascimento"] . "</td>";
-        echo "<td>" . $row["nacionalidade"] . "</td>";
-        echo "<td>" . $row["numero_rg"] . "</td>";
-        echo "<td>" . $row["cpf"] . "</td>";
-        echo "<td>" . $row["sexo"] . "</td>";
-        echo "<td>" . $row["endereco"] . "</td>";
-        echo "<td>" . $row["telefone"] . "</td>";
-        echo "<td>" . $row["email"] . "</td>";
-        echo "<td>" . $row["pais_destino"] . "</td>";
-        echo "<td>" . $row["datas_viagem"] . "</td>";
-        echo "<td>" . $row["motivo_viagem"] . "</td>";
-        echo "<td>";
-        echo "<button class='btn-excluir' data-id='" . $row["id"] . "' onclick='excluirRegistro(" . $row["id"] . ")'>Excluir</button>";
-        echo "<button class='btn-aprovar' data-id='" . $row["id"] . "' onclick='aprovarRegistro(" . $row["id"] . ")'>Aprovar</button>";
-        echo "</td>";
-echo "</td>";
+  echo "<input type='text' id='search-input' onkeyup='searchTable()' placeholder='Digite o termo de pesquisa...'>";
 
-        echo "</tr>";
-    }
-    echo "</table>";
+  echo "<table>";
+  echo "<tr><th>Nome</th><th>Data de Nascimento</th><th>Nacionalidade</th><th>RG</th><th>CPF</th><th>Sexo</th><th>Endereço</th><th>Telefone</th><th>Email</th><th>País de Destino</th><th>Datas de Viagem</th><th>Motivo da Viagem</th><th>Ações</th></tr>";
+  while ($row = $result->fetch_assoc()) {
+      echo "<tr>";
+      echo "<td>" . $row["nome_completo"] . "</td>";
+      echo "<td>" . $row["data_nascimento"] . "</td>";
+      echo "<td>" . $row["nacionalidade"] . "</td>";
+      echo "<td>" . $row["numero_rg"] . "</td>";
+      echo "<td>" . $row["cpf"] . "</td>";
+      echo "<td>" . $row["sexo"] . "</td>";
+      echo "<td>" . $row["endereco"] . "</td>";
+      echo "<td>" . $row["telefone"] . "</td>";
+      echo "<td>" . $row["email"] . "</td>";
+      echo "<td>" . $row["pais_destino"] . "</td>";
+      echo "<td>" . $row["datas_viagem"] . "</td>";
+      echo "<td>" . $row["motivo_viagem"] . "</td>";
+      echo "<td>";
+      echo "<button class='btn-excluir' data-id='" . $row["id"] . "' onclick='excluirRegistro(" . $row["id"] . ")'>Excluir</button>";
+      echo "<button class='btn-aprovar' data-id='" . $row["id"] . "' onclick='aprovarRegistro(" . $row["id"] . ")'>Aprovar</button>";
+      echo "</td>";
+      echo "</tr>";
+  }
+  echo "</table>";
 } else {
     echo "Nenhum resultado encontrado na tabela.";
 }
@@ -89,7 +88,13 @@ $conn->close();
 
 
 </body>
-<script src="../js/solicitacoes.js"></script>
+<script src="../js/solicitacoes.js">
+
+
+
+
+
+</script>
 </html>
 
 
