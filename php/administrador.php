@@ -43,7 +43,7 @@
      $id = $_GET['id'];
 
      if ($action == 'eliminar') {
-       // Excluir registro da tabela
+    
        $sql = "DELETE FROM enviar_contactos WHERE id = '$id'";
        if ($conn->query($sql) === TRUE) {
          echo "<p>Contato eliminado com sucesso.</p>";
@@ -51,18 +51,18 @@
          echo "<p>Erro ao eliminar contato: " . $conn->error . "</p>";
        }
      } elseif ($action == 'aprovar') {
-       // Atualizar registro na tabela
+      
        $sql = "UPDATE enviar_contactos SET aprovado = 1 WHERE id = '$id'";
        
      }
    }
 
-   // Consulta SQL para recuperar os dados da tabela "enviar_contactos"
+ 
    $sql = "SELECT * FROM enviar_contactos";
    $result = $conn->query($sql);
 
    if ($result->num_rows > 0) {
-     // Exibe os dados em uma tabela
+
      echo "<table>";
      echo "<tr><th>Nome</th><th>Email</th><th>Assunto</th><th>Ações</th></tr>";
      while ($row = $result->fetch_assoc()) {

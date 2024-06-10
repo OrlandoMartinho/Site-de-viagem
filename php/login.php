@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $senha = $_POST['senha'];
 
   // Verifica as credenciais de login
-  if ($nome === 'Jonilson' && $senha === 'Jonilson') {
+  if ($nome === 'Jose De Amaral' && $senha === '1234') {
     // Login bem-sucedido
     header("Location: administrador.php");
     exit();
