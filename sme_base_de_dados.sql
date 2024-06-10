@@ -42,10 +42,6 @@ CREATE TABLE `enviar_contactos` (
 -- Despejando dados para a tabela `enviar_contactos`
 --
 
-INSERT INTO `enviar_contactos` (`id`, `nome`, `email`, `assunto`) VALUES
-(1, 'vvvvvvv@ddd.mm', 'dddddddddddd', 'vvvdddddddd'),
-(2, 'vvvvvvv@ddd.mm', 'dddddddddddd', 'vvvdddddddd'),
-(3, 'vvvvvvv@ddd.mm', 'dddddddddddd', 'vvvdddddddd');
 
 -- --------------------------------------------------------
 
@@ -72,13 +68,6 @@ CREATE TABLE `solicitacao_passaporte` (
 --
 -- Despejando dados para a tabela `solicitacao_passaporte`
 --
-
-INSERT INTO `solicitacao_passaporte` (`id`, `nome_completo`, `data_nascimento`, `nacionalidade`, `numero_rg`, `cpf`, `sexo`, `endereco`, `telefone`, `email`, `pais_destino`, `datas_viagem`, `motivo_viagem`) VALUES
-(1, 'ooooooooooo', '2024-06-08', 'oooooooo', 'ooooooooooo', 'oooooooooo', 'masculino', 'ooooooo', 'oooooooooooo', 'ooooooooooo@edddddddd.m', 'oooooooooooo', '2024-06-03', 'oooooooooooooooo'),
-(2, 'ooooooooooo', '2024-06-08', 'oooooooo', 'ooooooooooo', 'oooooooooo', 'masculino', 'ooooooo', 'oooooooooooo', 'ooooooooooo@edddddddd.m', 'oooooooooooo', '2024-06-03', 'oooooooooooooooo'),
-(3, 'ooooooooooo', '2024-06-08', 'oooooooo', 'ooooooooooo', 'oooooooooo', 'masculino', 'ooooooo', 'oooooooooooo', 'ooooooooooo@edddddddd.m', 'oooooooooooo', '2024-06-03', 'oooooooooooooooo'),
-(4, 'orlando', '2024-06-08', 'oooooooo', 'ooooooooooo', 'oooooooooo', 'masculino', 'ooooooo', 'oooooooooooo', 'saiombo@gmail.com', 'oooooooooooo', '2024-06-03', 'oooooooooooooooo'),
-(8, '', '0000-00-00', '', '', '', '', '', '', '', '', '0000-00-00', '');
 
 --
 -- Índices para tabelas despejadas
